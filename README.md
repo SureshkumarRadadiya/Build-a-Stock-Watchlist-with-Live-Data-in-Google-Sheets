@@ -18,51 +18,51 @@ In this we can track -
 
 1.Stock Price
 
-  Open Price =GOOGLEFINANCE(A2,"priceopen")
+  - Open Price =GOOGLEFINANCE(A2,"priceopen")
   
 2.Stock Day Opening Price, Day High and Day Low Price
 
-  High =GOOGLEFINANCE(A2,"High")
+  - High =GOOGLEFINANCE(A2,"High")
   
-  Low =GOOGLEFINANCE(A2,"low")
+  - Low =GOOGLEFINANCE(A2,"low")
   
 3.Previous Day Close Price and Last Trading Price
 
-  Prev Close =GOOGLEFINANCE(A2,"Closeyest")
+  - Prev Close =GOOGLEFINANCE(A2,"Closeyest")
   
-  LTP =GOOGLEFINANCE(A2,"price")
+  - LTP =GOOGLEFINANCE(A2,"price")
   
 4.Day Change (In Amount Or %Age)
 
-  Change =GOOGLEFINANCE(A2,"change")
+  - Change =GOOGLEFINANCE(A2,"change")
   
-  Change % =GOOGLEFINANCE(A2,"changepct")/100
+  - Change % =GOOGLEFINANCE(A2,"changepct")/100
   
 5.Day Volume, 
 
-  Volume =GOOGLEFINANCE(A2,"volume")
+  - Volume =GOOGLEFINANCE(A2,"volume")
   
 6.Stock Market Cap, Stock PE
 
-  MarketCap =GOOGLEFINANCE(A2,"marketcap")
+  - MarketCap =GOOGLEFINANCE(A2,"marketcap")
   
-  PE =GOOGLEFINANCE(A2,"pe")
+  - PE =GOOGLEFINANCE(A2,"pe")
   
 7.52 Day High Or 52 Day Low 
 
-  52 High =GOOGLEFINANCE(A2,"high52")
+  - 52 High =GOOGLEFINANCE(A2,"high52")
   
-  52 Low  =GOOGLEFINANCE(A2,"low52")
+  - 52 Low  =GOOGLEFINANCE(A2,"low52")
   
 8.5 Day Or 30-Day Change (In %Age) (We Can Change the Number of Day)
 
-  5 Day % =F2/ INDEX(GOOGLEFINANCE(A2,"price",WORKDAY(TODAY(),-$N$1)),2,2)-1
+  - 5 Day % =F2/ INDEX(GOOGLEFINANCE(A2,"price",WORKDAY(TODAY(),-$N$1)),2,2)-1
   
-  30 Day % =F2/ INDEX(GOOGLEFINANCE(A2,"price",WORKDAY(TODAY(),-$O$1)),2,2)-1
+  - 30 Day % =F2/ INDEX(GOOGLEFINANCE(A2,"price",WORKDAY(TODAY(),-$O$1)),2,2)-1
   
 9.Last 250 Day Chart (We Can Change the Number of Day)
 
-  100 Day Chart =SPARKLINE(INDEX(GOOGLEFINANCE(A2,"PRICE",WORKDAY(TODAY(),-$P$1),TODAY()),,2),{"charttype","column";"color","green"})
+  - 100 Day Chart =SPARKLINE(INDEX(GOOGLEFINANCE(A2,"PRICE",WORKDAY(TODAY(),-$P$1),TODAY()),,2),{"charttype","column";"color","green"})
 
 
 
